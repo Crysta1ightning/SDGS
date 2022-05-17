@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocation</title>
+        <meta charset="utf-8">
+		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.min.js"></script>
+        <link rel="stylesheet" href="parallax_scrolling.css">
+		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
+
+
+	</head>
+	<body>
+		<div class="main">
+			<nav> 
+				<div id="about">
+					<h2>一支手機體驗</h2>
+					<h1><i>永續清華</i></h1>
+					<img id="sdgs-img" src="../../images/sdgs.png" alt="SDGS">
+				</div>
+				<ul class="nav-links">
+					<li>
+						<a href="../../index.html">HOME</a>
+					</li>
+					<li>
+						<a href="../../about/about.html">ABOUT</a>
+					</li>
+					<li>
+						<a href="../../map/map.html">MAP</a>
+					</li>
+					<li>
+						<a href="../../overview/overview.html">OVERVIEW</a>
+					</li>
+				</ul>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+			<!-- <div id="map-wrapper">
+				<div id="map">
+
+				</div>
+			</div> -->
+			<div id="overview-wrapper">
+				<div id="overview">
+				</div>
+			</div>
+		</div>
+        <!-- <div class="container">
+            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
+        </div> -->
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (1).jpg"></div>
+        <div class="container">  
+            <p>重金屬感測器 重金屬污染 飲用水檢測 中藥檢測 蔬菜植物檢測
+                重金屬的污染已經是全球性的問題，目 前的檢測方式必須先將採集的水樣送 到實驗室，經前處理後再以大型儀器像 是感應耦合電漿原子發射光譜法、感應 耦合電漿質譜儀法、火焰式原子吸收光 譜法、或是石墨爐式原子吸收光譜法檢 測。然而，這樣的方式耗費大量人力採 樣與處理，卻無法即時監控，更無法進 行大規模環境監控。離子選擇性電極雖 然能夠做到可攜式裝置，但其靈敏度卻 不足以滿足法規閥值的要求。
+                因此，本計劃將以電晶體感測器製作具 高靈敏度與高選擇性的為感測器，能夠 滿足法規閥值的需求，又能夠藉由其微 小化，簡單化，低價化，並能即時偵測 以及連結無限網路，最終能夠大量佈置 於溝渠，隨時監控水中鉛，鎘，汞離子 濃度。並且以單一晶片感測器陣列，達 到同時偵測三種重金屬，以達到隨時監 控溝渠重金屬，並且監控自來水中可能 的重金屬污染。 
+            </p>
+            <p>DfX 產品開發
+                本課程的目標是介紹並應用開發階段時 如何將 X 因子（X= 生產、品質、供應鏈、 環境、回收、永續…等等）的概念導入， 並探討這些因子在產品生命週期中對產 品、服務和系統設計的影響。在本課程 中，將介紹和討論到目前為止最新工具 和方法。
+                課程初期先了解在開發階段有哪些 X 因 子應該納入考量來增加產品進入市場的 成功機率；中期會透過最新期刊論文的 導讀與分析，了解各 X 因子最新的方法 工具與發展現況；課程最後階段會引導 同學將所學的 DfX 知識應用到產品 / 服 務 / 系統的開發上，期末專題為一篇學 術研討會論文，會協助同學投稿發表於 國內研討會。
+            </p>
+        </div>
+		<script src="../../menu/menu.js"></script>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementsByTagName("header").style.top = "0";
+              } else {
+                document.getElementsByTagName("header").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+	</body>
+</html>

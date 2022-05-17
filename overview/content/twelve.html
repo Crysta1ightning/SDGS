@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Geolocation</title>
+        <meta charset="utf-8">
+		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.min.js"></script>
+        <link rel="stylesheet" href="parallax_scrolling.css">
+		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
+
+
+	</head>
+	<body>
+		<div class="main">
+			<nav> 
+				<div id="about">
+					<h2>一支手機體驗</h2>
+					<h1><i>永續清華</i></h1>
+					<img id="sdgs-img" src="../../images/sdgs.png" alt="SDGS">
+				</div>
+				<ul class="nav-links">
+					<li>
+						<a href="../../index.html">HOME</a>
+					</li>
+					<li>
+						<a href="../../about/about.html">ABOUT</a>
+					</li>
+					<li>
+						<a href="../../map/map.html">MAP</a>
+					</li>
+					<li>
+						<a href="../../overview/overview.html">OVERVIEW</a>
+					</li>
+				</ul>
+				<div class="burger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+			<!-- <div id="map-wrapper">
+				<div id="map">
+
+				</div>
+			</div> -->
+			<div id="overview-wrapper">
+				<div id="overview">
+				</div>
+			</div>
+		</div>
+        <!-- <div class="container">
+            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
+        </div> -->
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (12).jpg"></div>
+        <div class="container">  
+            <p>減少空氣汙染 電動滑板車 電動機車 腳踏車 
+                本校設有Youbike與Oloo等環境友善交通工具供學生租借使用，駐警隊也全部改用電動機車，希望能夠改善廢氣排放及空氣汙染問題。
+                Youbike站：北校門、小吃部、台達館
+                Oloo站：化學館、仁齋、駐警隊、綜合三館、清華會館、女宿等...                 
+            </p>
+        </div>
+		<script src="../../menu/menu.js"></script>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementsByTagName("header").style.top = "0";
+              } else {
+                document.getElementsByTagName("header").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
+	</body>
+</html>
