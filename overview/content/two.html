@@ -2,14 +2,26 @@
 <html>
 	<head>
 		<title>Geolocation</title>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
         <link rel="stylesheet" href="parallax_scrolling.css">
 		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
-
-
+		<style>
+			.parallax {
+				/* The image used */
+				background-image: url("../../images/loc (2).jpg");
+			
+				/* Set a specific height */
+				min-height: 500px;
+			
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main">
@@ -30,7 +42,7 @@
 						<a href="../../map/map.html">MAP</a>
 					</li>
 					<li>
-						<a href="../../overview/">OVERVIEW</a>
+						<a href="../../overview/overview.html">OVERVIEW</a>
 					</li>
 				</ul>
 				<div class="burger">
@@ -39,20 +51,12 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-			<!-- <div id="map-wrapper">
-				<div id="map">
-
-				</div>
-			</div> -->
 			<div id="overview-wrapper">
 				<div id="overview">
 				</div>
 			</div>
 		</div>
-        <!-- <div class="container">
-            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
-        </div> -->
-        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (2).jpg"></div>
+        <div class="parallax"></div>
         <div class="container">  
             <p>紙張減耗 無紙化 保育樹木
                 2019年本校電子公文線上簽核比率為99.28%，減少紙張使用量約20萬張，減少二氧化碳排放量約343公斤。配合行政院推動「電子公文節能減紙續階方案」，藉由推動「公文線上簽核」、運用「電子公布欄」、擴大「公文電子交換」等措施，達到擴大實施公文電子化處理、節能減紙及保育樹木之目標。          
@@ -69,17 +73,5 @@
             </p>
         </div>
 		<script src="../../menu//menu.js"></script>
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-              var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementsByTagName("header").style.top = "0";
-              } else {
-                document.getElementsByTagName("header").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-        </script>
 	</body>
 </html>

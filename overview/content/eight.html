@@ -2,14 +2,26 @@
 <html>
 	<head>
 		<title>Geolocation</title>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
         <link rel="stylesheet" href="parallax_scrolling.css">
 		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
-
-
+		<style>
+			.parallax {
+				/* The image used */
+				background-image: url("../../images/loc (8).jpg");
+			
+				/* Set a specific height */
+				min-height: 500px;
+			
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main">
@@ -39,20 +51,12 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-			<!-- <div id="map-wrapper">
-				<div id="map">
-
-				</div>
-			</div> -->
 			<div id="overview-wrapper">
 				<div id="overview">
 				</div>
 			</div>
 		</div>
-        <!-- <div class="container">
-            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
-        </div> -->
-        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (8).jpg"></div>
+        <div class="parallax"></div>
         <div class="container">  
             <p>環保餐具 垃圾減量 環境保護
                 一可三不：內用時，店家提供可重複使 用的餐碗、盤；外帶時，店家不提供免 洗餐具、不提供塑膠袋、不提供塑膠吸 管。 以落實環境永續為發展目標，為校園建 立綠色環境保護措施，減少一次性拋棄 式餐具的使用量，並鼓勵全校師生能自 備環保餐具，一起提升環境保護、愛護 地球的環境意識。
@@ -62,17 +66,5 @@
             </p>
         </div>
 		<script src="../../menu/menu.js"></script>
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-              var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementsByTagName("header").style.top = "0";
-              } else {
-                document.getElementsByTagName("header").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-        </script>
 	</body>
 </html>

@@ -2,12 +2,26 @@
 <html>
 	<head>
 		<title>Geolocation</title>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
         <link rel="stylesheet" href="parallax_scrolling.css">
 		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
+		<style>
+			.parallax {
+				/* The image used */
+				background-image: url("../../images/loc (4).jpg");
+			
+				/* Set a specific height */
+				min-height: 500px;
+			
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main">
@@ -37,20 +51,12 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-			<!-- <div id="map-wrapper">
-				<div id="map">
-
-				</div>
-			</div> -->
 			<div id="overview-wrapper">
 				<div id="overview">
 				</div>
 			</div>
 		</div>
-        <!-- <div class="container">
-            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
-        </div> -->
-        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (4).jpg"></div>
+		<div class="parallax"></div>
         <div class="container">  
             <p>非洲 坦尚尼亞 國際志工 坦尚尼亞志工團 資訊課程
 				2019 年 7 月 9 日到 8 月 21 日，坦尚尼 亞教育志工團的第 12 年，13 位來自不 同科系的學生，與華碩合作，海運一百 多 台 電 腦 至 5 間 學 校 建 立 電 腦 教 室， 並提供電腦的教學。服務範圍從國小孩 童逐漸擴及大學及社區，逐步實現建立 資訊村的目標。希望藉由這份堅持的力 量，從教育方面著手，使非洲的孩童們 不再受限於環境的貧乏、不再錯過因資 訊而引起的經濟革命，讓他們能與世界連線，跟上世界的腳步。 
@@ -63,17 +69,6 @@
             </p>
         </div>
 		<script src="../../menu/menu.js"></script>
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-              var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementsByTagName("header").style.top = "0";
-              } else {
-                document.getElementsByTagName("header").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-        </script>
+
 	</body>
 </html>

@@ -20,9 +20,9 @@ function getRandomLocation(){
     var rand = Math.floor(Math.random() * max);
   }
   var atag = document.getElementById('link');
-  atag.innerHTML = "<a href='overview/content/"+sites[rand]+
+  atag.innerHTML = "<a href='./overview/content/"+sites[rand]+
   ".html'><div id='choice'><button>"+names[rand]+
-  "</button><img src='images/loc ("+String(rand+1)+").jpg'></div></a>";
+  "</button><img src='./images/loc ("+String(rand+1)+").jpg'></div></a>";
   //  names[rand];
   // location.href='../overview/content/' + sites[rand] + '.html';
 
@@ -53,9 +53,9 @@ function getClosestLocation(position){
   console.log(a);
   console.log(b);
   var atag = document.getElementById('link');
-  atag.innerHTML = "<a href='overview/content/"+sites[close]+
+  atag.innerHTML = "<a href='./overview/content/"+sites[close]+
   ".html'><div id='choice'><button>"+names[close]+
-  "</button><img src='images/loc ("+String(close+1)+").jpg'></div></a>";
+  "</button><img src='./images/loc ("+String(close+1)+").jpg'></div></a>";
   // names[close] 
   last = close;
 }

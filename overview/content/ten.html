@@ -2,14 +2,26 @@
 <html>
 	<head>
 		<title>Geolocation</title>
-        <meta charset="utf-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 		<script src="https://polyfill.io/v3/polyfill.js?features=default"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
         <link rel="stylesheet" href="parallax_scrolling.css">
 		<link rel="stylesheet" type="text/css" href="../../menu/menu.css" />
-
-
+		<style>
+			.parallax {
+				/* The image used */
+				background-image: url("../../images/loc (10).jpg");
+			
+				/* Set a specific height */
+				min-height: 500px;
+			
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="main">
@@ -39,20 +51,12 @@
 					<div class="line3"></div>
 				</div>
 			</nav>
-			<!-- <div id="map-wrapper">
-				<div id="map">
-
-				</div>
-			</div> -->
 			<div id="overview-wrapper">
 				<div id="overview">
 				</div>
 			</div>
 		</div>
-        <!-- <div class="container">
-            <img src="ts_name.png" alt="ts_name" style="width: 300px; height: 100px;" class="center">
-        </div> -->
-        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="../../images/loc (10).jpg"></div>
+        <div class="parallax"></div>
         <div class="container">  
             <p>人文自覺的科技社會 生態、環境與科技 身體、醫療與科技 心智科學與人工智能 科技新世代的公民社會
                 本計畫的目標在於透過連結於台灣社 會，特別是新竹在地的科技化發展的可 能性，建立跨越科技與人文領域的學術 與文化人才的培育機制，以為在新世代 下，就新竹以至於台灣之邁向具備人文 自覺的科技化社會之發展，提供理念的 指引、及注入實踐的動能。 本計畫之完整規劃合共四期；第一至三 期主力於分階段研發、檢討修正、並改 良及完備建立目標的人才培育機制，並 進行必要的師資培育、教學模組研發、 國際交流等環節，第四期除持續執行未 完成事項外，則配合教育部進行推廣宣 傳之工作。本計畫旨在建立可持續經營 的跨域人才培育機制，在人社院學士班 固有的跨域課程的基礎上，透過校內資源的整合、新課程的研發規劃，以及與 通識課程的協作，發展出包括基礎與進 階、必修與選修、專業與通識的完整課 程架構。在計畫的第 1 期，我們將 (1) 針對計畫主題與目標，盤點和整合教學 資源、調整既有課程的內容；(2) 針對 「生態、環境與科技」、「心智科學與 人工智能」、「身體、醫療與科技」、「科 技新世代的公民社會」等四項議 題，在 專業與通識二個層次，規劃三類四群組 的課群研發新課程及調整固有的課程； (3) 透過教學及課程工作坊與跨院系教研 分享，凝聚內部共識、擴展 跨域合作機 會，打造前瞻性的人文社會科學跨域教 師社群與團隊；(4) 透過校外產學營運中 心等機關之媒合，完成與產業的連結。                 
@@ -62,17 +66,5 @@
             </p>
         </div>
 		<script src="../../menu/menu.js"></script>
-        <script>
-            var prevScrollpos = window.pageYOffset;
-            window.onscroll = function() {
-              var currentScrollPos = window.pageYOffset;
-              if (prevScrollpos > currentScrollPos) {
-                document.getElementsByTagName("header").style.top = "0";
-              } else {
-                document.getElementsByTagName("header").style.top = "-50px";
-              }
-              prevScrollpos = currentScrollPos;
-            }
-        </script>
 	</body>
 </html>
