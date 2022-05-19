@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
 
+
 #choices {
   width: 100%;
-  height: 88vh;
-  position: relative;
-  padding: 100px;
+  height: 110vh;
+  position: absolute;
+  padding-top: 150px;
+  padding-left: 100px;
 }
 #choices li {
   display: inline-block;
@@ -59,8 +61,11 @@
 }
 
 @media screen and (max-width: 768px){
+  .nav-links{
+		width: 100%;
+	}
   #choices {
-    padding: 20px;
+    padding: 110px;
   }
   #choices li img {
     width: 200px;

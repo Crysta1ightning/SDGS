@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
+
 .main {
 	width: 100%;
 	background-color: #fff;
 }
 
 nav {
+	z-index: 2;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 12vh;
+	width: 100%;
 	background-color: #7b1084;
 	font-family: 'Poppins', sans-serif;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	position: fixed;
+	transition: transform 0.4s;
 }
 
 /* .logo{
@@ -47,26 +54,33 @@ nav {
 
 /* bar stuff */
 *, *::before, *::after {
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
+  } 
+
+.nav-links a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 4px;
+	left: 0;
+	background: #000;
+	transition: width .4s;
 }
 
-.nav-links a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
+.nav-links a:hover::after {
+	width: 100%;
+	transition: width .4s;
 }
-  
-.nav-links a:hover::before {
-    transform: scale(1,1);
-}
+
 /* end */
+
+.nav--hidden {
+	transform: translateY(-12vh);
+	box-shadow: none;
+}
+
 .burger {
 	display: none;
 	cursor: pointer;
@@ -156,8 +170,8 @@ nav {
 	display: inline-block;
 }
 #sdgs-img {
-	width: 80px;
-	height: 67px;
+	width: 60px;
+	height: 60px;
   transition: transform 1s ease-in-out;
 }
 #sdgs-img:hover {
@@ -171,19 +185,8 @@ nav {
 		font-size: 15px;
 	}
 	#about img {
-		width: 60px;
+		width: 50px;
 		height: 50px;
 	}
 }
-@media screen and (max-width: 768px){
-	/* #about h1 {
-		font-size: 20px;
-	}
-	#about h2 {
-		font-size: 12px;
-	}
-	#about img {
-		width: 40px;
-		height: 33.5px;
-	} */
-}
+

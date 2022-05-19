@@ -21,3 +21,19 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const navScroll = () => {
+    const nav_scroll = document.querySelector("nav");
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener("scroll", () => {
+        if (lastScrollY < window.scrollY) {
+            nav_scroll.classList.add("nav--hidden");
+        } else	{
+            nav_scroll.classList.remove("nav--hidden");
+        }
+        lastScrollY = window.scrollY;
+    });
+}
+
+navScroll();
