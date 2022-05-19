@@ -129,6 +129,9 @@ nav {
 .nav-active{
 	transform: translateX(0%);
 }
+.body-active{
+	overflow: hidden;
+}
 
 @keyframes navLinkFade{
 	from{

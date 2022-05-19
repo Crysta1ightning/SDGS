@@ -166,7 +166,7 @@
   top: 40%;
   left: 30%;
   opacity: 0;
-  font-size: 25px;
+  font-size: 3vw;
   border: none;
 }
 #choice:hover button {
@@ -209,8 +209,9 @@
 
 @media screen and (max-width: 768px){
   .coolbutton span {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     letter-spacing: 1px;
   }
 }
+
 

@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
 
-
-
 #choices {
   width: 100%;
-  height: 110vh;
+  height: auto;
   position: absolute;
   padding-top: 150px;
   padding-left: 100px;
@@ -65,7 +63,9 @@
 		width: 100%;
 	}
   #choices {
-    padding: 110px;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 30px;
   }
   #choices li img {
     width: 200px;
